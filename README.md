@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/4wartgke2w4mklv3?svg=true)](https://ci.appveyor.com/project/JohnnyStorm19/ahj-testing-task-1)
+[![Netology AHJ](https://github.com/JohnnyStorm19/ahj-TESTING-task_11/actions/workflows/web.yml/badge.svg)](https://github.com/JohnnyStorm19/ahj-TESTING-task_11/actions/workflows/web.yml)
