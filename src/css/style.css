@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.message_container {
+    visibility: hidden;
+}
+.message {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}

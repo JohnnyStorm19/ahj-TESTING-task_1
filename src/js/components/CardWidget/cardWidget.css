@@ -1,0 +1,62 @@
+.cardWidget {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.paysystems-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.paysystem {
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(1);
+}
+.paysystem_visa {
+    background-image: url('../../../img/visa-straight.png');
+}
+.paysystem_mir {
+    background-image: url('../../../img/icons8-mir-48.png');
+}
+.paysystem_discover {
+    background-image: url('../../../img/discover-curved.png');
+}
+.paysystem_jcb {
+    background-image: url('../../../img/jcb.png');
+}
+.paysystem_maestro {
+    background-image: url('../../../img/maestro-straight.png');
+}
+.paysystem_mastercard {
+    background-image: url('../../../img/mastercard-curved.png');
+}
+.paysystem_valid {
+    filter: grayscale(0);
+}
+
+.form {
+    width: 300px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.input {
+    width: 55%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.btn {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(117, 158, 55);
+}
