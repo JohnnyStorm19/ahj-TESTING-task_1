@@ -29,7 +29,7 @@ export default class CardWidget {
     static getInputMarkup() {
         return `
             <form class="form">
-                <input class="input" type="text" required minlength="13" maxlength="19">
+                <input class="input" type="text" minlength="13" maxlength="19" required="">
                 <button class="btn">Click to Validate</button>
             </form>`
     }
