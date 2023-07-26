@@ -33,7 +33,7 @@ test.each([
     { cardNumber: '3532414684183001', system: 'jcb' },
     { cardNumber: '6763337847895356', system: 'maestro' },
     { cardNumber: '6011691608478863', system: 'discover' },
-])('return $system of $cardNumber', ({cardNumber, system}) => {
+])('return $system for $cardNumber', ({cardNumber, system}) => {
 
     const containerMarkup = `
     <div class="container">
@@ -64,7 +64,7 @@ test.each([
     { cardNumber: '3532414684183001', validity: 'invalid' },
     { cardNumber: '6763337847895356', validity: 'invalid' },
     { cardNumber: '5469550012048325', validity: 'valid'},
-])('return $validity of $cardNumber', ({cardNumber, validity}) => {
+])('return $validity for $cardNumber', ({cardNumber, validity}) => {
     const containerMarkup = `
     <div class="container">
         <div class="message_container">
