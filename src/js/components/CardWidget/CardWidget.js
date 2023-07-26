@@ -29,7 +29,7 @@ export default class CardWidget {
     static getInputMarkup() {
         return `
             <form class="form">
-                <input class="input" type="text">
+                <input class="input" type="text" required minlength="13" maxlength="19">
                 <button class="btn">Click to Validate</button>
             </form>`
     }
@@ -48,6 +48,7 @@ export default class CardWidget {
         this.form = this.parentEl.querySelector('.form');
         this.paySystemsContainer = this.parentEl.querySelector('.paysystems-container');
         this.input = this.form.querySelector('.input');
+        this.input.setAt
 
         this.form.addEventListener('submit', this.onSubmit);
         this.input.addEventListener('input', this.onInput);
@@ -56,7 +57,7 @@ export default class CardWidget {
 
     onSubmit(e) {
         e.preventDefault();
-        const cardNumber = this.input.value;
+        let cardNumber = this.input.value.split(' ').join(''); //удаляем все пробелы
         const system = cardSystem(cardNumber);
 
         this.messageContainer = this.parentEl.querySelector('.message_container');
