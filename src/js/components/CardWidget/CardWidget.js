@@ -48,7 +48,6 @@ export default class CardWidget {
         this.form = this.parentEl.querySelector('.form');
         this.paySystemsContainer = this.parentEl.querySelector('.paysystems-container');
         this.input = this.form.querySelector('.input');
-        this.input.setAt
 
         this.form.addEventListener('submit', this.onSubmit);
         this.input.addEventListener('input', this.onInput);
