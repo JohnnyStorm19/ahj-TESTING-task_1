@@ -72,9 +72,11 @@ export default class CardWidget {
         });
 
         if (isValidCard(cardNumber)) {
+            this.messageEl.style.color = 'green';
             this.messageEl.textContent = 'Your card is valid';
             return;
         }
+        this.messageEl.style.color = 'red';
         this.messageEl.textContent = 'Your card is invalid';
     }
     onInput() {
